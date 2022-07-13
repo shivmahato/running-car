@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    overflow: hidden;
+}
+#hii{
+    color: #eff306;
+    background-color: rgb(54, 64, 190);
+    position: relative;
+    font-size: 30px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-style: italic;
+    height: 40px;
+    border-radius: 10px ;
+    top: 15px;
+    /* left: 450px; */
+    display: flex;
+    /* width: 60%; */
+    
+}
+.night{
+height: 80vh;
+width: 70vw;
+border: 1px solid black;
+margin: 5rem auto;
+background: url('x1.png');
+position: relative;
+background-size: cover;
+box-shadow: 1px 2px 60px rgba(1,1, 1, 10);
+overflow-x: hidden;
+
+}
+.surf{
+    height: 140px;
+    width: 1000%;
+    background: url('x2.png');
+    display: block;
+    position: absolute;
+bottom: 0%;
+left: 0%;
+background-repeat: repeat-x;
+animation: moveright 6s linear infinite;
+}
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 24%;
+    animation: susp 1s linear infinite;
+}
+@keyframes moveright{
+    100%{transform: translateX(-2950px);}
+}
+@keyframes susp{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
